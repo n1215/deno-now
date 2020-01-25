@@ -1,0 +1,13 @@
+{
+    "name": "Deno & ZEIT Now Test",
+    "version": 2,
+    "routes": [
+        { "src": "/.*", "dest": "/api/handler.ts" }
+    ],
+    "functions": {
+        "api/**/*.ts": {
+            "runtime": "now-deno@0.1.0",
+            "memory": 128
+        }
+    }
+}
